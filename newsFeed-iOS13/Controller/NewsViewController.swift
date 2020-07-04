@@ -15,9 +15,9 @@ class NewsViewController: UIViewController, WKNavigationDelegate, UIScrollViewDe
     var newsTitle: String?
     var objectID: String?
     
-    let realm = try! Realm()
+    private let realm = try! Realm()
 
-    var favLinks: Results<Favorites>? {
+    private var favLinks: Results<Favorites>? {
         didSet {
             if (favLinks?.contains(where: {$0.objectID == objectID}))! {
                 updatePin()

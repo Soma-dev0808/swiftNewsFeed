@@ -9,7 +9,7 @@ class NewsTableViewCell: UITableViewCell {
 
 class NewsTableViewController: UITableViewController {
     
-    var indicator = UIActivityIndicatorView()
+    private var indicator = UIActivityIndicatorView()
     
     var seatchInfo: String?
     
@@ -19,19 +19,19 @@ class NewsTableViewController: UITableViewController {
         }
     }
     
-    var techPosts: [TechResponse.Post] = [] {
+    private var techPosts: [TechResponse.Post] = [] {
         didSet {
             loadTable()
         }
     }
     
-    var financePost: [FinancialResponse.FinancialPosts] = [] {
+    private var financePost: [FinancialResponse.FinancialPosts] = [] {
         didSet {
             loadTable()
         }
     }
     
-    var searchPost: [SearchResponse.SearchPosts] = [] {
+    private var searchPost: [SearchResponse.SearchPosts] = [] {
         didSet {
             loadTable()
         }

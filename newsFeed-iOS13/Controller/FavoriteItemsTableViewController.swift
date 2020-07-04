@@ -3,9 +3,9 @@ import RealmSwift
 
 class FavoriteItemsTableViewController: UITableViewController {
     
-    let realm = try! Realm()
+    private let realm = try! Realm()
     
-    var savedFavs: Results<Favorites>?
+    private  var savedFavs: Results<Favorites>?
 
     override func viewDidLoad() {
         super.viewDidLoad()

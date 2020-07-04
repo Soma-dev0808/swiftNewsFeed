@@ -18,17 +18,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsCell" id="DuH-ay-tbN" customClass="NewsTableViewCell" customModule="newsFeed_iOS13" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="86.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="87.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DuH-ay-tbN" id="KwD-C9-3cO">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="86.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="87.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-dt-t15">
-                                            <rect key="frame" x="15" y="5" width="353" height="76.5"/>
+                                            <rect key="frame" x="15" y="5" width="353" height="77.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98N-fa-IaG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="47.5" height="76.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98N-fa-IaG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="47.5" height="77.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="47.5" id="faP-ZM-zwK"/>
                                                     </constraints>
@@ -37,10 +37,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqY-eo-mG3" userLabel="NewsTitleView">
-                                                    <rect key="frame" x="57.5" y="0.0" width="295.5" height="76.5"/>
+                                                    <rect key="frame" x="57.5" y="0.0" width="295.5" height="77.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1d-22-Lch">
-                                                            <rect key="frame" x="10" y="10" width="275.5" height="56.5"/>
+                                                            <rect key="frame" x="10" y="10" width="275.5" height="57.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -190,7 +190,7 @@
             </objects>
             <point key="canvasLocation" x="292.75362318840581" y="79.6875"/>
         </scene>
-        <!--Favorite Items Table View Controller-->
+        <!--Bookmarks-->
         <scene sceneID="ego-pI-mpd">
             <objects>
                 <tableViewController id="7R6-jL-EZ5" customClass="FavoriteItemsTableViewController" customModule="newsFeed_iOS13" customModuleProvider="target" sceneMemberID="viewController">
@@ -213,7 +213,7 @@
                             <outlet property="delegate" destination="7R6-jL-EZ5" id="3Cj-hZ-MX4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hBU-BP-5Tp"/>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="hBU-BP-5Tp"/>
                     <connections>
                         <segue destination="si0-Vm-v0e" kind="show" identifier="goToNews" id="U3e-rB-4gE"/>
                     </connections>
@@ -394,13 +394,13 @@
         <image name="lessthan" catalog="system" width="128" height="111"/>
         <image name="pin" catalog="system" width="119" height="128"/>
         <namedColor name="customOrange">
-            <color red="0.95236247780000005" green="0.61074423789999999" blue="0.072048492729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95200002193450928" green="0.61100000143051147" blue="0.071999996900558472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="customRed">
-            <color red="0.78863614800000004" green="0.25850772859999999" blue="0.20351016520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78899997472763062" green="0.25900000333786011" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="customYellow">
-            <color red="0.94594782590000004" green="0.76991766689999996" blue="0.055615469809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94599997997283936" green="0.76999998092651367" blue="0.056000001728534698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

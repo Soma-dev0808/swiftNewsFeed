@@ -2,8 +2,8 @@ import UIKit
 
 class CategoryViewController: UIViewController {
     
-    var selectedCategory: String?
-    var textField = UITextField()
+    private var selectedCategory: String?
+    private var textField = UITextField()
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var techButton: UIButton!
     @IBOutlet weak var financeButton: UIButton!
@@ -76,7 +76,6 @@ class CategoryViewController: UIViewController {
     }
     
     @IBAction func favButtonPressed(_ sender: UIBarButtonItem) {
-        print("pressed")
         self.performSegue(withIdentifier: "goToFav", sender: self)
     }
     
