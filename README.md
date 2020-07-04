@@ -53,4 +53,4 @@ For the navigation of app is using Navigation Controller to make it smooth to na
 Please clone this application, and try to build and run it.
 
 ## License
-[MIT](https://github.com/Soma-dev0808/swiftStreetView/blob/master/LICENSE)
+[MIT](https://github.com/Soma-dev0808/swiftNewsFeed/blob/master/LICENSE)
