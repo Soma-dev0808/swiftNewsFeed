@@ -50,7 +50,12 @@ For the navigation of app is using Navigation Controller to make it smooth to na
 
 ## To test this application
 
-Please clone this application, and try to build and run it.
+Please clone this application, and try to run
+
+*pod deintegrate
+*pod install
+
+then you can already build it
 
 ## License
 [MIT](https://github.com/Soma-dev0808/swiftNewsFeed/blob/master/LICENSE)
